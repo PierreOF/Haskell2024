@@ -30,20 +30,20 @@ perfeitos :: Int -> [Int]
 perfeitos int = [x | x <- [2..int], sum (fatores x) == x]
 
 -- 7 questão
-provando :: [[Int]] -> [Int]
-provando listas = concat [[x <- [1 .. 2]][y<- [1 .. 4]]]
+provando :: [(Integer,Integer)]
+provando = concat [[ (x,y) | x <- [3, 4]] | y <- [1,2]]
 
-----------------------------------------------------
-main :: IO ()
-main = do 
-    print ( soma 100 )
+-- 8 questao
 
-    print( grid 1 2)
+posicoes :: Eq a => a -> [a] -> [Int]
+posicoes x xs = buscar x (zip xs [0..])
 
-    print(quadrado 2)
 
-    print ( replicateDois 3 True)
+buscar :: Eq a => a -> [(a,b)] -> [b]
+buscar k xs = [v | (k', v) <- xs, k == k']
 
-    print (pitag 10)
+-- 9 questoes 
 
-    print (perfeitos 500)
+produtoaa :: [Int] -> [Int] -> Int
+produtoaa a b = sum [ x * y | (x,y) <- zip a b, x * y /= 0 ]
+
