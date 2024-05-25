@@ -30,7 +30,7 @@ perfeitos :: Int -> [Int]
 perfeitos int = [x | x <- [2..int], sum (fatores x) == x]
 
 -- 7 questão
-provando :: [(Integer,Integer)]
+provando :: [(Int,Int)]
 provando = concat [[ (x,y) | x <- [3, 4]] | y <- [1,2]]
 
 -- 8 questao
@@ -46,4 +46,14 @@ buscar k xs = [v | (k', v) <- xs, k == k']
 
 produtoaa :: [Int] -> [Int] -> Int
 produtoaa a b = sum [ x * y | (x,y) <- zip a b, x * y /= 0 ]
+
+-- [testando resultados]
+
+
+
+main :: IO ()
+main = do 
+
+    print ()
+
 
