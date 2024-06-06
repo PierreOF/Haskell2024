@@ -107,6 +107,6 @@ main = do
 
     --print (numElements [1,2,3,4])
 
-    --print(ultimoElem [1,2,3,4])
+    print(ultimoElem [1,2,3,4])
 
     print( somainteiros [-10,-20])
