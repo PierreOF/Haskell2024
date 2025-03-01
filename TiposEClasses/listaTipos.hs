@@ -62,7 +62,7 @@ eval = folde id (+)
 main :: IO ()
 main = do
 
-    -- print(mult (Suc(Suc Zero)) (Suc(Suc(Suc Zero))) )
+    print(mult (Suc(Suc Zero)) (Suc(Suc(Suc Zero))) )
 
     -- print (existe 2 (No (No (Folha 1) 3 (Folha 4)) 5 (No (Folha 6) 7 (Folha 9))))
 
